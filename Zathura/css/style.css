@@ -1,75 +1,79 @@
 /*Variáveis*/
-:root{
-    --mainColor: #1D2951;
-    --textColor: #fff;
-    --backgroundColor: lightgray;
 
+:root {
+    --mainAzul: #1D2951;
+    --mainAmarelo: #f9b91c;
+    --mainRosa: #cf426e;
+    --mainAzulClaro: #416c93;
 }
 
+
 /*Reset*/
-html, body{
-    margin:0;
+
+html,
+body {
+    margin: 0;
     height: 100%;
     font-family: 'mainFont';
-    background-color:var(--backgroundColor);
-
+    background-color: #dfdfdf;
 }
 
 .footerPrincipal {
-  width: 100%;
-  display: flex;
-
-  justify-content: center;
-  align-content: center;
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-nav ul{
+nav ul {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
+
 
 /*Fontes*/
-@font-face{
+
+@font-face {
     font-family: 'mainFont';
     src: url('../fonts/Roboto/Roboto-Thin.ttf');
 }
 
+
 /*Estilos Básicos*/
+
 .conteudoSite {
-  flex-grow: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#imagemAlien{
-  display:flex;
-  align-items: center;
-
-  width: 30px;
+#imagemAlien {
+    display: flex;
+    align-items: center;
+    width: 30px;
 }
 
-
-
-
-body{
+body {
     display: flex;
     width: 100%;
     flex-direction: column;
-
 }
-nav{
-    background-color: var(--mainColor);
-    color: var(--textColor);
+
+nav {
+    background-color: var(--mainAzul);
+    color: white;
     width: 100%;
     align-self: flex-start;
+    font-size: 31.59px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-around;
-
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -78,61 +82,65 @@ nav ul li{
     padding: 15px;
 }
 
-.principal :hover{
-  font-weight: bolder;
-
+.principal :hover {
+    font-weight: bolder;
 }
-
 
 .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-
-nav ul li img{
+nav ul li img {
     height: 50px;
     padding: 10px;
 }
 
-/*Tablet pequeno*/
-@media screen and (min-width: 620px){
-
+.backgroungContent {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
 }
 
-/*Telas grandes e notebooks*/
-@media screen and (min-width: 960px){
+.pessoasFelizes {
+    width: 100%;
+}
 
-  .principal {
-    display: flex;
-  }
-    nav{
+
+/*Tablet pequeno*/
+
+@media screen and (min-width: 620px) {}
+
+
+/*Telas grandes e notebooks*/
+
+@media screen and (min-width: 960px) {
+    .principal {
+        display: flex;
+    }
+    nav {
         align-self: flex-start;
     }
-    nav ul{
+    nav ul {
         justify-content: flex-start;
     }
-    .icons{
+    .icons {
         display: none;
     }
-    nav ul li{
+    nav ul li {
         padding: 20px;
         margin: 0 10px;
     }
-
-    .footerPrincipal {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      justify-content: center;
-      align-content: center;
-
+    .backgroungContent {
+        display: flex;
     }
-
 }
 
 
 /*Desktop*/
-@media screen and (min-width: 1200px){
 
-}
+@media screen and (min-width: 1200px) {}
