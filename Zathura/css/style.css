@@ -2,6 +2,8 @@
 :root{
     --mainColor: #1D2951;
     --textColor: #fff;
+    --backgroundColor: lightgray;
+
 }
 
 /*Reset*/
@@ -9,6 +11,17 @@ html, body{
     margin:0;
     height: 100%;
     font-family: 'mainFont';
+    background-color:var(--backgroundColor);
+
+}
+
+.footerPrincipal {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+
 }
 
 nav ul{
@@ -23,20 +36,31 @@ nav ul{
 }
 
 /*Estilos Básicos*/
-
-.principal {
-  display: none;
+.conteudoSite {
+  flex-grow: 1;
 }
+
+#imagemAlien{
+  display:flex;
+  align-items: center;
+
+  width: 30px;
+}
+
+
+
 
 body{
     display: flex;
     width: 100%;
+    flex-direction: column;
+
 }
 nav{
     background-color: var(--mainColor);
     color: var(--textColor);
     width: 100%;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 nav ul{
@@ -50,17 +74,20 @@ nav ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 15px;
 }
 
-nav ul li :hover{
-  font-weight: bold;
+.principal :hover{
+  font-weight: bolder;
 
 }
 
 
-
-
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 
 nav ul li img{
@@ -92,6 +119,16 @@ nav ul li img{
         padding: 20px;
         margin: 0 10px;
     }
+
+    .footerPrincipal {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      justify-content: center;
+      align-content: center;
+
+    }
+
 }
 
 
