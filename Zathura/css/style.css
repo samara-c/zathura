@@ -65,7 +65,7 @@ nav {
     color: white;
     width: 100%;
     align-self: flex-start;
-    font-size: 31.59px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -143,4 +143,55 @@ nav ul li img {
 
 /*Desktop*/
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+
+}
+
+.botoes {
+	-moz-box-shadow:inset 0px 1px 0px 0px #3BA1A8;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #3BA1A8;
+	box-shadow:inset 0px 1px 0px 0px #3BA1A8;
+	background-color:#49BCC4;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+text-indent:0;
+	color:white;
+	font-family:mainFont;
+	font-size:18px;
+	font-style:normal;
+	font-weight: bold;
+height:auto;
+width:auto;
+	text-decoration:none;
+	text-align:center;
+	padding: 20px;
+	margin: 15px;
+
+}
+	.botoes:hover {
+	background-color:#3BA1A8;
+
+}
+
+.botoes:active {
+	position:relative;
+	top:1px;
+}
+
+.fonteTitulo {
+  color: #416C93;
+  font-size: 32px;
+  font-weight: bolder;
+
+}

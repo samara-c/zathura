@@ -1,0 +1,9 @@
+.backgroundCardMesa {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+}

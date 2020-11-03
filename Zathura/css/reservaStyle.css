@@ -1,0 +1,36 @@
+
+
+.botaoRosa {
+	background-color:#CF426E;
+	-moz-box-shadow:inset 0px 1px 0px 0px  #B83B62;
+	-webkit-box-shadow:inset 0px 1px 0px 0px  #B83B62;
+	box-shadow:inset 0px 1px 0px 0px  #B83B62;
+}
+.botaoRosa:hover{
+	background-color: #B83B62;
+}
+
+.botoesDeReserva {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 960px) {
+	.botoesDeReserva {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+
+
+	}
+	}
