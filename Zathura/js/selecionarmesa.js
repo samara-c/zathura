@@ -1,41 +1,129 @@
 console.log("Estou aprendendo Javascript");
-
-var mesas = [
+window.onload = function (){
+    var mesas = [
     {
         nome : "Marte",
         imagem : "./icons/marte.PNG",
         descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
+        localizacao: "Térreo",
         capacidade: 3
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+
+    {
+        nome : "Marte",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "Térreo",
+        capacidade: 3
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
+
+
+    },
+    {
+        nome : "Plutao",
+        imagem : "./icons/marte.PNG",
+        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
+        localizacao: "terreo",
+        capacidade: 4
 
 
     }
 ]
+    adicionarMesas(mesas);
+}
 
-function adicionarMesa(nome,imagem, descricao, localizacao, capacidade ) {
-    let mesas=document.getElementById("listaMesas");
+
+
+function adicionarMesas(mesas) {
+    console.log("passei por aqui");
+    let mesasDiv=document.getElementById("listaMesas");
+    for (var i = 0; i < mesas.length; i++) {
+
     let cardMesas = document.createElement("div");
     cardMesas.className="backgroundCardMesa";
-    mesas.appendChild(cardMesas);
-    console.log({mesas});
+    mesasDiv.appendChild(cardMesas);
+    console.log({mesasDiv});
     let articleMesas = document.createElement("article");
+    articleMesas.className="conteudoCardMesas";
     let planetaNome = document.createElement("p");
     let planetaImagem = document.createElement("img");
+    planetaImagem.className="imagemMesa";
     let planetaDescricao = document.createElement("p");
     let planetaLocalizacao = document.createElement("p");
     let planetaCapacidade = document.createElement("p");
-    planetaNome.innerHTML = nome;
-    planetaImagem.src = imagem;
-    planetaDescricao.innerHTML = descricao;
-    planetaLocalizacao.innerHTML = localizacao;
-    planetaCapacidade.innerHTML = capacidade;
+    planetaNome.innerHTML ="<span class='tituloMesas'>"+mesas[i].nome+"</span>";
+    planetaImagem.src = mesas[i].imagem;
+    planetaDescricao.innerHTML = mesas[i].descricao;
+    planetaLocalizacao.innerHTML = "<span class='classeDoSpan'>Localização: </span>"+mesas[i].localizacao;
+    planetaCapacidade.innerHTML = "<span class='classeDoSpan'>Capacidade: </span>"+mesas[i].capacidade;
     articleMesas.appendChild(planetaNome);
     articleMesas.appendChild(planetaImagem);
     articleMesas.appendChild(planetaDescricao);
     articleMesas.appendChild(planetaLocalizacao);
     articleMesas.appendChild(planetaCapacidade);
     cardMesas.appendChild(articleMesas);
-
+    }
 
 }
 
