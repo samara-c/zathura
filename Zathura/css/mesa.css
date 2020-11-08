@@ -2,8 +2,73 @@
     background-color: white;
     border-radius: 20px;
     padding: 40px;
-    margin: 20px;
+    margin: 30px 50px;
+    
     -webkit-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
     -moz-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
     box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    display: flex;
+    justify-items: center;
+    cursor: pointer;
+    border: 4px solid #ffffff;
+    
+
 }
+
+.conteudoSite {
+
+    flex-direction: column;
+    justify-content: space-center;
+    align-items: center;
+    
+}
+
+.backgroundCardMesa:hover {
+
+    border: 4px solid #F9B91C;
+
+}
+
+
+
+#listaMesas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    
+    
+}
+
+.imagemMesa {
+    width: 120px;
+    
+}
+
+.conteudoCardMesas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classeDoSpan {
+    color: black;
+    font-weight: bold;
+}
+
+.tituloMesas {
+
+    color:#1D2951;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.textoNovaReserva {
+   
+   margin-left: 40px; 
+   font-weight: 900;
+}
+
+

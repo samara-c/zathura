@@ -1,0 +1,88 @@
+#paginaInicialContent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0px;
+    
+    
+
+}
+
+.backGroundInicial {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+}
+
+.backGroundInfos {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#infosContent {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.itemInfo {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background-color:#49BCC4
+
+;
+display: flex;
+justify-items: center;
+margin: 30px;
+flex-direction: column;
+-webkit-box-shadow: 1px 1px 15px 1px rgba(179, 179, 179, 1);
+-moz-box-shadow: 1px 1px 15px 1px rgba(179, 179, 179, 1);
+box-shadow: 1px 1px 15px 1px rgba(179, 179, 179, 1);
+
+}
+
+.iconeCirculo {
+    width: 100px;
+    position: relative;
+    
+
+    
+}
+
+#icone1 {
+    top: 20%;
+    left: 20%;
+}
+
+#icone2{
+    width: 110px;
+    top: 15%;
+    left:15%;
+}
+
+#icone3{
+    top: 15%;
+    left: 20%;
+}
+
+#icone4{
+    top: 15%;
+    left: 17%;
+}
+
+@media screen and (min-width: 960px) {
+#infosContent {
+    flex-direction: row;
+    
+    
+}
+}
