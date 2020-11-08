@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ZATHURA - Seja bem vindx!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/mesa.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/simple-date-picker.css" />
+    <script type="text/javascript" src="js/selecionarmesa.js"> </script>
+    
+</head>
+
+
+<body>
+
+
+
+    <nav>
+        <ul class="principal">
+            <li><img src="icons/asteroide.png"> </li>
+            <li>Home</li>
+            <li>Reservas</li>
+            <li>Nossos jogos</li>
+        </ul>
+    </nav>
+    <div class="textoNovaReserva">
+        <p class="fonteTitulo"> Nova reserva</p>
+        <p style="font-size:22px;">Passo 2: Escolha seus jogos e uma data para a visita</p>
+    </div>
+    <div id="escolhaDataEJogos">
+    <article class="backgroungContent">
+
+        <label for="date">Data:  </label><input type="text" id="date" />
+        <script type="text/javascript" src="js/simple-date-picker.js"></script>
+        <script type="text/javascript">
+            var $date = document.querySelector('#date');
+            // initial datepicker with the input Node
+            datepicker.init($date);
+        </script>
+        
+
+    </article>
+    </div>
+
+    
+    <footer class="footerPrincipal">
+        <p>Handcrafted by a </p>
+        <div id="imagemAlien">
+            <img src="./icons/estrangeiro.png" id="alien" class="responsive">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
