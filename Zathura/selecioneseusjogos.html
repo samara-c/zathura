@@ -3,13 +3,16 @@
 
 <head>
 
-    <title>ZATHURA - Seja bem vindx!</title>
+    <title>ZATHURA - Escolha seus jogos</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/mesa.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/simple-date-picker.css" />
+    <link rel="stylesheet" type="text/css" href="css/selecionejogo.css" />
+    <link rel="stylesheet" type="text/css" href="css/reservaStyle.css" />
     <script type="text/javascript" src="js/selecionarmesa.js"> </script>
-    
+    <script type="text/javascript" src="js/selecionarjogo.js"> </script>
+
 </head>
 
 
@@ -29,27 +32,60 @@
         <p class="fonteTitulo"> Nova reserva</p>
         <p style="font-size:22px;">Passo 2: Escolha seus jogos e uma data para a visita</p>
     </div>
-    <div id="escolhaDataEJogos">
-    <article class="backgroungContent">
-
-        <label for="date">Data:  </label><input type="text" id="date" />
-        <script type="text/javascript" src="js/simple-date-picker.js"></script>
-        <script type="text/javascript">
-            var $date = document.querySelector('#date');
-            // initial datepicker with the input Node
-            datepicker.init($date);
-        </script>
-        
-
-    </article>
-    </div>
 
     
-    <footer class="footerPrincipal">
-        <p>Handcrafted by a </p>
-        <div id="imagemAlien">
-            <img src="./icons/estrangeiro.png" id="alien" class="responsive">
+    <div id="escolhaDataEJogos">
+        <article class="backgroundJogos">
+
+            <label class="fonteTelaData" for="date"> <b>Data: </b></label>
+            <input type="text" id="date" size="auto" class="data" />
+            <script type="text/javascript" src="js/simple-date-picker.js"></script>
+            <script type="text/javascript">
+                var $date = document.querySelector('#date');
+                // initial datepicker with the input Node
+                datepicker.init($date);
+            </script>
+
+            <div>
+                <p class="fonteTelaData"> <b> Jogos: </b></p>
+                <p class="fonteTelaData"> Quais jogos você quer que reservemos para sua visita? </p>
+                <p class="fonteTelaData">Selecione até 3 títulos </p>
+                <ul id="selecionarjogo">
+                    
+                    <ul>
+            </div>
+            <div class="botoesBottomPage">
+            <div class="botoesFinalizarReserva">
+                <a href="#" class="botoes botaoRosa" class="mobile">Voltar</a>
+                <a href="#" class="botoes" class="mobile"> Continuar</a>
+            </div>
+            <div id="figuraAstronauta">
+            
+                <img src="./icons/astronautFim.png" id="astronautaReserva">
+            
+            
+            
+            </div>
         </div>
+        </article>
+
+    </div>
+
+
+    
+
+    <footer class="footerPrincipal">
+
+        <p style="font-weight: bold; color:dimgray;"> Venha nos visitar! Pouse sua nave na R. Via Lactea - Chacara do Solar
+            II (Fazendinha) - Santana de Parnáiba / SP, 06531-065 </p>
+        <div id="alienEspaco">
+            <p>Handcrafted by a </p>
+            <div id="imagemAlien">
+                <img src="./icons/estrangeiro.png" id="alien" class="responsive">
+            </div>
+
+
+
 
     </footer>
 

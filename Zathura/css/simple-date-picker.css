@@ -83,8 +83,3 @@
 .ui-datepicker-wrapper .ui-datepicker-body table td.disabled:hover {
   cursor: default;
 }
-
-#date {
-   height: fit-content;
-   position: relative; 
-}

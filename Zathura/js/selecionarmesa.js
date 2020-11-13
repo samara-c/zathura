@@ -6,89 +6,12 @@ window.onload = function (){
         imagem : "./icons/marte.PNG",
         descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
         localizacao: "Térreo",
-        capacidade: 3
+        capacidade: 3,
+        id : 0
 
 
     },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-
-    {
-        nome : "Marte",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "Térreo",
-        capacidade: 3
-
-
-    },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    },
-    {
-        nome : "Plutao",
-        imagem : "./icons/marte.PNG",
-        descricao : "Sinta-se um habitante do planeta vermelho nessa mesa completamente customizada",
-        localizacao: "terreo",
-        capacidade: 4
-
-
-    }
+    
 ]
     adicionarMesas(mesas);
 }
@@ -96,12 +19,12 @@ window.onload = function (){
 
 
 function adicionarMesas(mesas) {
-    console.log("passei por aqui");
     let mesasDiv=document.getElementById("listaMesas");
     for (var i = 0; i < mesas.length; i++) {
-
     let cardMesas = document.createElement("div");
     cardMesas.className="backgroundCardMesa";
+    console.log(mesas[i]);
+    cardMesas.onclick = selecionarMesa(mesas[i].id);
     mesasDiv.appendChild(cardMesas);
     console.log({mesasDiv});
     let articleMesas = document.createElement("article");
@@ -129,4 +52,12 @@ function adicionarMesas(mesas) {
 
 function carregarMesas () {
     mesas.forEach (mesa => adicionarMesa(mesa.nome, mesa.imagem, mesa.descricao, mesa.localizacao, mesa.capacidade));
+}
+
+function selecionarMesa (id) {
+
+    console.log(id);
+    
+
+
 }

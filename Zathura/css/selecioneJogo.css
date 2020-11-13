@@ -1,0 +1,71 @@
+#selecionarjogo {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-inline-start: 0;
+
+}
+
+#escolhaDataEJogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.backgroundJogos {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+    box-shadow: 1px 1px 13px 1px rgba(179, 179, 179, 1);
+}
+
+.data {
+
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.fonteTelaData {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.botoesBottomPage {
+
+    display : flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+#astronautaReserva {
+    display: none;
+}
+
+@media screen and (min-width: 960px) {
+
+    #astronautaReserva {
+    display: inline-block;    
+    position: fixed;
+    top: 500px;
+    margin: 0%;
+    right: 100px;
+    width: 200px;
+    }
+
+}
+
